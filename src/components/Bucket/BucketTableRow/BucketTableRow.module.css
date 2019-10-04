@@ -1,0 +1,95 @@
+.BucketDeleteButton {
+  padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #050505;
+}
+
+.BucketDeleteButton:focus {
+  outline: none;
+}
+
+.Img {
+  width: 240px;
+}
+.BucketTableRow {
+  border-bottom: 1px solid #fff;
+}
+
+.BucketTableRow th,
+.BucketTableRow td {
+  padding: 1.2rem 0;
+  font-family: "Gilroy";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.0048px;
+  font-weight: bold;
+}
+
+.BucketTableRow th:first-child,
+.BucketTableRow td:first-child {
+  padding-right: 1rem;
+}
+
+.TablePriceCell {
+  margin-left: 1.5rem;
+  min-width: 8rem;
+}
+
+.BucketTableRowHead {
+  display: flex;
+  align-items: center;
+}
+
+.BucketTableRowHead img {
+  display: inline-block;
+}
+
+.BucketTableRowHead p {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.BucketTableRowButtons {
+  
+  min-width: 12rem;
+}
+
+.BucketTableRowButtons button {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.27px;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.BucketTableRowButtons button:focus {
+  outline: none;
+}
+
+.BucketTableRowButtons button:last-child {
+  padding: 0.5rem 0 0.5rem 1.35rem;
+}
+
+.BucketTableRowButtons button:first-child {
+  padding: 0.5rem 1.35rem 0.5rem 0;
+}
+
+.BucketTableRowButtons button:nth-child(even) {
+  padding: 0.5rem 0;
+}
+
+.BucketTableRowCount {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  padding: 0 0.25rem;
+  width: 45px;
+}
+
+.Pricing {
+  min-width: 10rem;
+}

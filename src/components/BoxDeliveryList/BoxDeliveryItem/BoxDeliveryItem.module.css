@@ -1,0 +1,135 @@
+.BoxDeliveryItem {
+  width: 310px;
+  margin: 1.5rem;
+  overflow: hidden;
+  color: #fff;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-bottom: 5rem;
+  box-shadow: 0px 0px 1.9rem rgba(0, 0, 0, 0.5);
+}
+
+.BoxDeliveryItemName {
+  height: 45px;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.33px;
+  font-family: "Gilroy";
+  margin: 0 0rem 1.7rem 0;
+}
+
+.BoxDeliveryItemImg {
+  width: 100%;
+  height: 166px;
+}
+
+.BoxDeliveryItemPriceWeight {
+  margin: 1.7rem 0;
+  font-family: Gilroy;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.BoxDeliveryItemCounter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.9rem;
+  flex-wrap: wrap;
+}
+
+.BoxDeliveryItemResult {
+  font-family: "Gilroy";
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+}
+
+.BoxDeliveryItemButtons button {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.27px;
+  border: none;
+  background-color: #1e1e1e;
+  box-sizing: border-box;
+}
+
+.BoxDeliveryItemButtons button:focus {
+  outline: none;
+}
+
+.BoxDeliveryItemButtons button:nth-child(odd) {
+  padding: 0.5rem 1.35rem;
+}
+
+.BoxDeliveryItemButtons button:nth-child(even) {
+  padding: 0.5rem 0;
+}
+
+.BoxDeliveryItemCount {
+  border-left: 1px solid #303030;
+  border-right: 1px solid #303030;
+  padding: 0 0.75rem;
+  width: 50px;
+}
+
+.BoxDeliveryItemOrder {
+  font-family: "Gilroy";
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+}
+
+.BoxDeliveryItemBucket {
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  width: 100%;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: inherit;
+  font-size: 1.8rem;
+  letter-spacing: 0.83px;
+  line-height: 2.2rem;
+  transition: transform 0.2s;
+}
+
+.BoxDeliveryItemBucket:focus {
+  outline: none;
+}
+
+.BoxDeliveryItemBucket:active {
+  transform: translateY(2px);
+}
+
+.BoxDeliveryItemBucket:hover {
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+
+@media screen and (max-width: 900px){
+  .BoxDeliveryItem {
+    width: 280px;
+  }
+}

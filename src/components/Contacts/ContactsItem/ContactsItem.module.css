@@ -1,0 +1,188 @@
+.Wrapper {
+  width: 80%;
+  padding-top: 16rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 5rem;
+}
+
+.Title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  letter-spacing: 0.218182px;
+
+  color: #fff;
+
+  margin-bottom: 4.3rem;
+}
+
+.ContactItems {
+  width: 30%;
+  min-width: 28rem;
+  margin-bottom: 5rem;
+}
+
+.Contacts {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(12%);
+}
+
+.ContactOne,
+.ContactTwo,
+.ContactThree {
+  position: relative;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.ContactOne::before {
+  content: url(../../../assets/img/call.svg);
+  display: block;
+  position: absolute;
+  left: -12%;
+  top: -15%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.ContactTwo::before {
+  content: url(../../../assets/img/geotag.svg);
+  display: block;
+  position: absolute;
+  left: -12%;
+  top: -15%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.ContactThree::before {
+  content: url(../../../assets/img/mail.svg);
+  display: block;
+  position: absolute;
+  left: -12%;
+  top: 0%;
+  height: 3rem;
+  width: 3rem;
+}
+
+.SocialLinks {
+  display: flex;
+  align-items: center;
+}
+
+.SocialLinks p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #a6a6a6;
+}
+
+.SocialLinksItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.MidLink {
+  margin: 0 1rem;
+}
+
+.ContactItems,
+.Form {
+  margin: 0 3rem;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form h5 {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.Form label {
+  font-family: "Gilroy";
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-bottom: 0.5rem;
+
+  color: #fff;
+}
+
+.Form input {
+  margin-bottom: 1.2rem;
+  width: 26rem;
+  height: 2.6rem;
+}
+
+.Form button {
+  align-self: flex-end;
+  padding: 1.2rem 3.2rem;
+
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+
+  text-align: center;
+  letter-spacing: 1.1553333px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  border: none;
+  background-color: #ddd;
+  transition: transform .1s;
+}
+
+.Form textarea {
+  height: 4.7rem;
+  margin-bottom: 2rem;
+
+  resize: none;
+}
+
+.Form button:focus {
+  outline: none;
+}
+
+.Form button:active {
+  transform: translateY(2px);
+}
+
+.Form button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    flex-direction: column;
+  }
+  .ContactItems {
+    margin: 0 auto;
+  }
+  .Form {
+    width: 26rem;
+    margin: 4rem auto 0;
+  }
+}

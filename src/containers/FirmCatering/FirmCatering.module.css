@@ -1,0 +1,411 @@
+.Main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.HeaderBGWrapper {
+  background-image: url(../../assets/img/bg/HEADER_BG.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.SliderText {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 29.5%;
+  left: 15%;
+}
+
+.Catering {
+  width: 100vw;
+  height: 900px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.Images {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  
+  
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+.Background {
+  width: 100%;
+}
+
+
+
+.PuzzleText {
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.9rem;
+  letter-spacing: 0.460637px;
+  color: #000000;
+}
+  @media screen and (max-width: 1200px) {
+  .SliderText {
+    top: 30%;
+    left: 9%;
+  }
+}
+
+.SliderText h1 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7.3rem;
+  line-height: 8.8rem;
+  letter-spacing: 0.27px;
+  color: #fff;
+}
+
+.SliderText p {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.113px;
+  color: #fff;
+}
+
+
+.PuzzleParagraph {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: 0.0984375px;
+  color: #000000;
+}
+
+.Specials {
+  padding: 4rem 0;
+
+  position: relative;
+}
+
+.Meat {
+  width: 26%;
+  max-width: 40rem;
+  position: absolute;
+  top: 50%;
+  left: -1%;
+  transform: translate(0, -50%);
+}
+
+.Salt {
+  width: 16%;
+  max-width: 22rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.Title {
+  width: 38rem;
+  margin: 0 auto;
+
+  text-align: center;
+
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+
+  margin-bottom: 3rem;
+}
+
+.Title span {
+  color: #f84419;
+}
+
+.List {
+  width: 61rem;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.Item {
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+}
+
+.Paragraph {
+  width: 61rem;
+  margin: 0 auto;
+  text-align: right;
+
+  font-family: "Gilroy";
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+
+  color: #f84419;
+
+  margin-top: 6rem;
+}
+
+.Transparent {
+  opacity: 0;
+}
+
+.NoVisible {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 1800px) {
+  .SliderText h1 {
+    font-size: 6.8rem;
+    line-height: 6.8rem;
+  }
+  .SliderText p {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .SliderText h1 {
+    font-size: 5.8rem;
+    line-height: 5.8rem;
+  }
+  .SliderText p {
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+  }
+  .List, .Paragraph {
+    width: 40rem;
+  }
+  .Title {
+    font-size: 1.6rem;
+  }
+  .Paragraph {
+    font-size: 1.3rem;
+    margin-top: 3rem;
+  }
+  .Item {
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+  }
+  .Salt {
+    width: 13%;
+  }
+  .Meat {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .SliderText {
+    left: 17.5%;
+  }
+  .SliderText h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+  .SliderText p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .PuzzleText {
+    font-size: 3rem;
+    line-height: 2.4rem;
+    margin-top: 1rem;
+  }
+  .PuzzleParagraph {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Catering {
+    height: 750px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Catering {
+    height: 550px;
+  }
+  .SliderText h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .SliderText p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .SliderText {
+    top: 35%;
+    left: 20%;
+  }
+  .SliderText h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .SliderText p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .List, .Paragraph {
+    width: 30rem;
+  }
+  .Title {
+    font-size: 1.4rem;
+  }
+  .Paragraph {
+    font-size: 1.1rem;
+    margin-top: 3rem;
+  }
+  .Item {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .HeaderBGWrapper {
+    background-image: url(../../assets/img/bg/HEADER_BG600.jpg);
+    padding-top: 20rem;
+  }
+  .SliderText {
+    top: 12.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    width: 90%;
+    text-align: center;
+  }
+
+  .SliderText h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .SliderText p {
+   margin-top: 1rem;
+  }
+
+  .PuzzleText {
+    font-size: 4rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+
+    margin-top: -9rem;
+    position: relative;
+    z-index: 300;
+  }
+  .PuzzleParagraph {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .SliderText {
+    top: 15%;
+  }
+  .SliderText h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SliderText {
+    top: 17%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .SliderText h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .SliderText p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .SliderText {
+    top: 17%;
+    left: 50%;
+  }
+  .PuzzleText {
+    margin-top: -7rem;
+    font-size: 2.8rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+  }
+  .PuzzleParagraph {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 0 2rem;
+  }
+  .Meat, .Salt {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PuzzleText {
+    margin-top: -6rem;
+  }
+  .SliderText {
+    top: 18%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .SliderText {
+    top: 20%;
+  }
+}

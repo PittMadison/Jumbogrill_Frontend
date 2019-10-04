@@ -1,0 +1,164 @@
+.wrapperReviews {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 800;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: zoom 0.75s;
+}
+#modalReviews .modal-contentReviews {
+  background-color: #fff;
+  max-width: 463px;
+  height: 413px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  padding: 33px 55px 54px 50px;
+}
+
+#modalReviews .modal-contentReviews h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+#modalReviews .modal-contentReviews input {
+  width: 100%;
+  padding-bottom: 6px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1b1b1b;
+  margin-bottom: 28px;
+}
+
+#modalReviews .modal-contentReviews textarea {
+  border: 1px solid #ddd;
+  margin-bottom: 28px;
+  width: 100%;
+  height: 6rem;
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1b1b1b;
+  resize: none;
+}
+
+#modalReviews .modal-contentReviews input:focus,
+#modalReviews .modal-contentReviews textarea:focus {
+  outline: none;
+}
+
+#modalReviews .modal-contentReviews .do-closeReviews {
+  position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #050505;
+}
+
+#modalReviews .modal-contentReviews .do-closeReviews:focus {
+  outline: none;
+}
+
+#modalReviews .modal-contentReviews .button {
+  display: block;
+  width: 247px;
+  height: 48px;
+  margin: 0 auto;
+  border: none;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  background-color: #ddd;
+}
+
+#modalReviews .modal-contentReviews .button:focus {
+  outline: none;
+}
+
+#modalReviews .modal-contentReviews .button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+}
+
+#modalReviews .modal-contentReviews .button:active{
+  transform: translateY(2px);
+
+}
+
+
+
+.modalStars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.modalStars p {
+  margin-right: 1rem;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  color: #5f5f5f;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #modalReviews .modal-contentReviews {
+    height: 360px;
+    padding: 20px 55px 54px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #modalReviews .modal-contentReviews {
+    height: 340px;
+  }
+  #modalReviews .modal-contentReviews {
+    padding: 1rem;
+  }
+  #modalReviews .modal-contentReviews h2 {
+    font-size: 2.1rem;
+  }
+  #modalReviews .modal-contentReviews .button {
+    margin: 0 2rem;
+    width: 170px;
+  }
+}

@@ -1,0 +1,298 @@
+.Form {
+    background-color: #fff;
+  
+    margin: 0 auto;
+  
+    width: 75rem;
+  
+    box-shadow: 0px 0px 3rem rgba(0, 0, 0, 0.5);
+  
+    position: absolute;
+  
+    top: 50%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  
+    padding: 3rem;
+
+    z-index: 2000;
+
+  }
+
+  .Close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  
+    width: 17px;
+    height: 17px;
+  }
+
+  .Logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .Step {
+    text-align: center;
+  
+    font-family: "Gilroy";
+    font-weight: 800;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    letter-spacing: 0.460637px;
+  
+    color: rgba(248, 68, 25, 0.5);
+  }
+
+  .Title {
+
+    margin-bottom: 3rem;
+
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2rem;
+  
+    letter-spacing: 0.460637px;
+  
+    color: #000;
+  
+    text-align: center;
+  }
+
+    .Table {
+      font-family: 'Gilroy';
+  
+      font-size: 1.2rem;
+      line-height: 1.4rem;
+      
+      text-transform: uppercase;
+
+      text-align: left;
+      letter-spacing: 0.207692px;
+     
+      
+      color: #000000;
+        border-collapse: collapse;
+    }
+    
+    
+
+    .Service {
+      padding-bottom: .5rem;
+    }
+
+    .Price, .Quantity, .Total {
+      text-align: center;
+      font-weight: normal;
+    }
+    
+    .Quantity {
+      width: 110px;
+    }
+    .Price {
+      width: 80px;
+    }
+    .Total {
+      width: 100px;
+    }
+    .ServiceHead {
+      border-bottom: 1px solid #8b8b8b;
+    }
+
+    .ServiceRow {
+          padding: .5rem 0;
+          border-bottom: 1px solid #dcdcdc;
+        }
+
+    .ServiceHead th:first-child {
+      padding: 1.5rem 0 1.5rem 0.5rem;
+      font-weight: normal;
+    }
+
+    .ServiceRow th:first-child {
+      text-transform: initial;
+      padding: 1.5rem 0 1.5rem 0.5rem;
+    }
+
+    .ServiceRow th:last-child {
+      font-weight: 600;
+    }
+
+    .TableBody tr:last-child  {
+      border-bottom: 1px solid #8b8b8b;
+    }
+
+  .Radio {
+    position: relative;
+    display: inline-block;
+    padding-left: 30px;
+  
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+  
+    cursor: pointer;
+  
+    user-select: none;
+  }
+  
+  .Radio input {
+    display: none;
+  }
+  .Radio .Checkmark {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    
+    transform: translateY(-50%);
+
+    border: 1px solid #9f9f9f;
+  }
+  
+  .Radio input:checked + .Checkmark::after {
+    content: "";
+    display: block;
+    background: url(../../../assets/img/fireCheck.svg) center no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 26px;
+    position: absolute;
+    top: -8px;
+    left: -1px;
+  }
+
+  .ButtonsTop {
+    background-color: #fff;
+    width: 110px;
+    margin: 0 auto;
+  }
+
+  .ButtonsTop button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+  
+    font-family: "Gilroy";
+  
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  
+    text-align: center;
+    letter-spacing: 0.259108px;
+  
+    color: #000000;
+  }
+  
+  .ButtonsTop button:focus {
+    outline: none;
+  }
+  
+  .LastButton,
+  .FirstButton {
+    padding: 0.8rem 1.25rem;
+  }
+  
+  .PeopleCounter {
+    border-left: 1px solid #303030;
+    border-right: 1px solid #303030;
+    padding: 0.1rem 0.5rem;
+    width: 40px;
+  }
+
+  .Button {
+    cursor: pointer;
+    
+    margin-top: 3rem;
+    margin-left: auto;
+    display: block;
+    width: 18rem;
+    background-color: transparent;
+    border: 1px solid;
+    border-image-source: linear-gradient(
+      45deg,
+      #a6a6a6 0%,
+      #464646 15.51%,
+      #b1b1b1 38.26%,
+      #5f5f5f 62.19%,
+      #acacac 72.92%,
+      #3a3a3a 83.26%,
+      #545454 94.98%,
+      #ffffff 100%
+    );
+    border-image-slice: 1;
+    padding: .75rem .5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.83px;
+    text-transform: uppercase;
+    font-family: "Gilroy";
+    font-weight: 800;
+    color: #000;
+    transition: transform 0.1s;
+
+  }
+  
+  .Button:hover {
+    color: #fff;
+    background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+    border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  }
+  
+  .Button:focus {
+    outline: none;
+  }
+  
+  .Button:active {
+    transform: translateY(2px);
+  }
+
+  @media screen and (max-width: 900px) {
+    .Quantity, .ButtonsTop {
+      width: 96px;
+    }
+    
+  }
+
+  @media screen and (max-width: 650px) {
+    .Form {
+      width: 95%;
+    }
+    .Price {
+      width: 55px;
+    }
+    .Total {
+      width: 60px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .Logo {
+      transform: scale(.7);
+      top: 0;
+      left: -0.5rem;
+    }
+    .Radio {
+      font-size: 1.2rem;
+  }
+  .TableWrapper {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: scroll;
+  } 
+  .Table {
+    width: 430px;
+  }
+}

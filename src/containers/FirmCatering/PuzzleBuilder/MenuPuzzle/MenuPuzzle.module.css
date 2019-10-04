@@ -1,0 +1,111 @@
+.Menu {
+  width: 162px;
+  height: 149px;
+
+  background: url(../../../../assets/img/cateringPuzzles/MenuActive.jpg);
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: -150%;
+  left: 49.9%;
+
+  opacity: 0;
+  transform: translateX(-50%);
+
+  z-index: 100;
+}
+
+.WalkInMenu {
+  animation: walkInMenu 1s ease-in-out forwards;
+}
+
+@keyframes walkInMenu {
+  from {
+    opacity: 0;
+    top: -150%;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.Title {
+  padding-top: 10px;
+
+  font-family: "Gilroy";
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: center;
+  letter-spacing: 0.391541px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000;
+}
+
+.Guests {
+  margin-top: 7px;
+
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 14px;
+
+  text-align: center;
+  letter-spacing: 0.293333px;
+
+  color: #ffffff;
+}
+
+.SinglePrice {
+  margin-top: 7px;
+
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.Total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+
+  z-index: 150;
+
+  font-family: "Gilroy";
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+}
+
+.Total span:nth-child(2) {
+  margin-top: 2px;
+}
+
+.Total span:nth-child(3) {
+  margin-top: -2px;
+}

@@ -1,0 +1,668 @@
+.FinalWrapper {
+  max-width: 1300px;
+  width: 100%;
+  height: 800px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: transparent;
+}
+
+.PuzzleHolder {
+  position: relative;
+  width: 650px;
+  height: 680px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.Menu {
+  position: absolute;
+  top: 0%;
+  left: 0.2%;
+  z-index: 100;
+  animation: scaleDown 1.2s ease-in-out both;
+
+  clip-path: url(#menu);
+}
+
+.Buffet {
+  position: absolute;
+
+  top: 27.4%;
+  left: 0;
+  z-index: 200;
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.2s both;
+
+  clip-path: url(#buffet);
+}
+
+.Grill {
+  position: absolute;
+  top: 27.4%;
+  left: 47.7%;
+  z-index: 300;
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.4s both;
+
+  clip-path: url(#grill);
+}
+
+.Rest {
+  position: absolute;
+  top: 50.7%;
+  left: 0%;
+  z-index: 400;
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.6s both;
+
+  clip-path: url(#rest);
+}
+
+.Car {
+  position: absolute;
+  top: 63.4%;
+  left: 34.6%;
+  z-index: 500;
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.8s both;
+
+  clip-path: url(#car);
+}
+
+.MenuTitle, .BuffetTitle, .GrillTitle, .RestTitle, .CarTitle {
+  font-family: 'Gilroy';
+font-weight: 800;
+font-size: 2.4rem;
+line-height: 4rem;
+
+color: #FFFFFF;
+
+text-shadow: 0px 0px 2rem #000000, 0px 0px 2rem #000000;
+z-index: 1000;
+position: absolute;
+
+}
+
+.MenuTitle {
+  font-size: 3.6rem;
+line-height: 4.4rem;
+
+top: 12%;
+left: 45%;
+
+transform: translateX(-50%);
+
+animation: scaleDown 1.2s ease-in-out both;
+
+}
+
+.BuffetTitle {
+  top: 43%;
+  left: 12%;
+
+transform: translateX(-50%);
+
+animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.2s both;
+
+}
+
+.GrillTitle {
+  top: 43%;
+  left: 69%;
+  transform: translateX(-40%);
+
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.4s both;
+
+}
+
+.RestTitle {
+  top: 80%;
+    left: 12%;
+    transform: translateX(-50%);
+
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.6s both;
+
+}
+
+.CarTitle {
+  top: 80%;
+  left: 69%;
+  transform: translateX(-40%);
+
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.8s both;
+
+}
+
+.MenuPrice, .BuffetPrice, .GrillPrice, .RestPrice, .CarPrice {
+  font-family: 'Gilroy';
+font-weight: 600;
+font-size: 1.4rem;
+line-height: 1.7rem;
+
+color: #FFF;
+
+text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000;
+
+position: absolute;
+
+z-index: 1000;
+}
+
+.MenuPrice {
+  top: 19%;
+  left: 79%;;
+  transform: translateX(-5%);
+align-items: center;
+ 
+animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) both;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.BuffetPrice {
+  top: 58%;
+  left: 38%;
+  transform: translateX(-50%);
+align-items: center;
+ 
+animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.2s both;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.GrillPrice {
+  top: 60.5%;
+  left: 79%;
+  align-items: center;
+
+  animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.4s both;
+
+  
+  transform: translateX(-5%);
+
+}
+
+.RestPrice {
+  top: 94%;
+    left: 38%;
+align-items: center;
+
+animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.6s both;
+
+
+  transform: translateX(-5%);
+ 
+
+  display: flex;
+  flex-direction: column;
+}
+
+.CarPrice {
+  top: 96.5%;
+  left: 79%;
+align-items: center;
+
+animation: scaleDown 1.2s cubic-bezier(0.06, 0.05, 0.26, 0.97) 0.8s both;
+
+
+  transform: translateX(-5%);
+}
+
+.OrderTitle {
+  font-family: 'Gilroy';
+
+font-weight: 800;
+font-size: 2.4rem;
+line-height: 2.4rem;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #fff;
+}
+
+.ReccomendBtn {
+  cursor: pointer;
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-transform: uppercase;
+
+ width: 220px;
+ height: 40px;
+ 
+ background-color: #F9E000;
+ border: none;
+
+ font-family: 'Gilroy';
+
+font-weight: 800;
+font-size: 1.2rem;
+line-height: 1.5rem;
+
+text-align: center;
+letter-spacing: 0.83px;
+text-transform: uppercase;
+
+color: #000;
+
+animation: colorShift 1s linear infinite;
+}
+
+.TopBtns{
+
+  position: absolute;
+
+  top: 13%;
+  left: 0%;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ReccomendBtn img {
+  margin-left: 1rem;
+}
+
+.EditBtn {
+  cursor: pointer;
+
+  text-transform: uppercase;
+  width: 220px;
+  height: 40px;
+  
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+
+  font-family: 'Gilroy';
+
+font-weight: 800;
+font-size: 1.2rem;
+line-height: 1.5rem;
+
+text-align: center;
+letter-spacing: 0.83px;
+text-transform: uppercase;
+
+color: #fff;
+
+transition: transform .1s;
+}
+
+.EditBtn:hover, .OrderBtn:hover {
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.EditBtn:focus, .OrderBtn:focus {
+  outline: none;
+}
+
+.EditBtn:active, .OrderBtn:active {
+  transform: translateY(2px);
+}
+
+
+.Details {
+  position: absolute;
+
+  top: 28%;
+  left: 0%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.DetailsFirst {
+  width: 300px;
+
+position: relative;
+
+font-family: 'Gilroy';
+font-style: italic;
+font-size: 2rem;
+line-height: 2.4rem;
+
+color: #FFFFFF;
+}
+
+.DetailsFirst::before {
+  content: '“';
+  display: block;
+  width: 23px;
+  height: 45px;
+
+  font-family: 'Gilroy';
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  
+  color: #FFFFFF;
+
+  position: absolute;
+
+  top: -50%;
+    left: -6%;
+}
+
+.DetailsSecond {
+margin-top: 2rem;
+
+  width: 267px;
+
+
+font-family: 'Gilroy';
+
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 2.1rem;
+
+color: #fff;
+}
+
+.PdfBtn {
+cursor: pointer;
+
+  position: absolute;
+
+  bottom: 3.4%;
+  right: 0%;
+
+  text-transform: uppercase;
+
+  width: 220px;
+height: 40px;
+
+background: #fff;
+
+border: none;
+
+z-index: 800;
+}
+
+.BotContext {
+  width: 620px;
+  margin: 3rem auto 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FinalPrice {
+  font-family: 'Gilroy';
+font-weight: 600;
+font-size: 1.3rem;
+line-height: 1.4rem;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+
+color: #fff;
+
+text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000;
+}
+
+.OrderBtn {
+cursor: pointer;
+
+  width: 274px;
+height: 40px;
+
+
+background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+
+
+font-family: 'Gilroy';
+
+font-weight: 800;
+font-size: 1.4rem;
+line-height: 1.7rem;
+text-align: center;
+letter-spacing: 0.83px;
+text-transform: uppercase;
+
+color: #fff;
+
+transition: transform .1s;
+}
+
+.DisplayNone {
+  display: none;
+}
+
+.AnimationNone {
+  animation: none;
+}
+
+.Green {
+  background-image: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+  border-image-source: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(4.5) translateY(-200%) rotate(180deg);
+    opacity: 0;
+  }
+  69% {
+    transform: scale(0.9) rotate(-1deg);
+  }
+  to {
+    transform: scale(1) translateY(0%) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes colorShift {
+  from {
+    background-color: rgb(255, 244, 148);
+  }
+  to {
+    background-color: rgb(250, 150, 0);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .TopBtns {
+    width: 90%;
+    left: 5%;
+  }
+  .PdfBtn {
+    right: 5%;
+  }
+  .Details {
+    left: 5%;
+  }
+  .DetailsFirst {
+    font-size: 2rem;
+    line-height: 2.4rem;
+
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    width: 260px;
+  }
+  .DetailsFirst::before {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    top: -23%;
+    left: -3%;
+  }
+  .DetailsSecond {
+    width: 260px;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .EditBtn, .ReccomendBtn {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .PuzzleHolder {
+    transform: scale(.8);
+  }
+  .BotContext {
+    width: 490px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-25px);
+  }
+  .OrderTitle {
+    transform: translateY(25px);
+  }
+  .BotContext p:first-child {
+    margin-bottom: 2rem;
+  }
+  .FinalPrice {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+  .TopBtns {
+    width: 92%;
+    left: 4%;
+    top: 17%;
+  }
+  .Details {
+    left: 12%;
+  }
+  .DetailsFirst, .DetailsSecond {
+    width: 230px;
+  }
+  .PdfBtn {
+    right: 4%;
+    bottom: 5.1%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .ReccomendBtn, .Details, .EditBtn {
+    display: none;
+  }
+  .PdfBtn {
+    position: relative;
+    right: unset;
+    bottom: unset;
+  }
+  .Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .OrderBtn, .PdfBtn {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Buttons {
+    width: 435px;
+  }
+  .PuzzleHolder {
+    transform: scale(.7);
+  }
+  .OrderTitle {
+    transform: translateY(75px);
+  }
+  .BotContext {
+    width: 49%;
+    transform: translateY(-75px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .MenuPrice, .BuffetPrice, .GrillPrice, .RestPrice, .CarPrice {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .MenuPrice {
+    left: 76%
+  }
+  .GrillPrice, .CarPrice{
+    left: 77%;
+  }
+  .BuffetPrice, .RestPrice {
+    left: 37%;
+  }
+  .FinalWrapper {
+    height: 550px;
+  }
+  .PuzzleHolder {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(.55);
+  }
+  .OrderTitle {
+    transform: translateY(35px);
+  }
+  .OrderBtn, .PdfBtn {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .BotContext {
+    width: 26.5%;
+    transform: translateY(440px);
+  }
+  .OrderBtn, .PdfBtn {
+    width: 45%;
+    height: 30px;
+    width: 38%;
+  }
+  .Buttons {
+    width: 342px;
+  }
+  .FinalPrice {
+    width: 342px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .PuzzleHolder {
+    transform: translate(-50%, -50%) scale(.5);
+  }
+  .Buttons {
+    width: 310px;
+  }
+  .FinalPrice {
+    width: 310px;
+  }
+
+}

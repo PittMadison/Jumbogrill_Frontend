@@ -1,0 +1,27 @@
+.carousel .slide {
+  background: none !important;
+}
+
+.carousel .slide img {
+  transform: translateX(50%) !important;
+  width: 50% !important;
+}
+
+.carousel .control-dots {
+  bottom: 18% !important;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel .slide img {
+    transform: translate(0%, -20%) !important;
+    width: 95% !important;
+  }
+  .carousel .control-dots {
+    display: none !important;
+  }
+  #slide {
+    padding-top: 16rem !important;
+  }
+}
+
+

@@ -1,0 +1,169 @@
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Img {
+  min-width: 37rem;
+  width: 30%;
+}
+
+.Display {
+  display: none;
+}
+
+.Display2 {
+  display: block;
+}
+
+.Items {
+  margin-right: 20rem;
+}
+
+.Items h5 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 5.9rem;
+  letter-spacing: 0.181731px;
+}
+
+.Orange {
+  color: transparent;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4.8rem;
+  line-height: 5.9rem;
+  letter-spacing: 0.181731px;
+  background-image: linear-gradient(#f99026 0%, #df2029 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.Items p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.0757212px;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .Items {
+    margin-right: 10rem;
+  }
+  .Items p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .Items h5 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .Items h6 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+}
+
+.Button {
+  display: block;
+  width: 25.6rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.1s;
+}
+
+.Button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 899px) {
+  .Items {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Items h5 {
+    margin-top: 2rem;
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .Items h6 {
+    font-size: 3.6rem;
+    margin-bottom: 1rem;
+  }
+  .Items p {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+  .Items a {
+    order: 3;
+    margin: 2rem 0;
+  }
+  .Display {
+    display: block;
+  }
+  .Display2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Items h5 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+  .Items p {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  .Items h6 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+  }
+}

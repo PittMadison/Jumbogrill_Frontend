@@ -1,0 +1,19 @@
+.BoxBGWrapper {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.Display1 {
+  display: block;
+}
+.Display2 {
+  display: none;
+}
+
+@media screen and (max-width: 617px) {
+  .Display2 {
+    display: block;
+  }
+  .Display1 {
+    display: none;
+  }
+}

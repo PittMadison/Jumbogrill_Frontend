@@ -1,0 +1,264 @@
+.BucketWrapper {
+  width: 63%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 15rem;
+}
+
+.FormDivision {
+  display: flex;
+}
+
+.BucketPayment {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  width: 31rem;
+  padding: 0 0.25rem;
+  margin: 3rem 0;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .BucketOrderBtn {
+    margin: 2rem auto;
+  }
+  .BucketPayment {
+    margin: 2rem auto;
+  }
+  .BucketHeading {
+    margin: 0 auto 4.4rem;
+  }
+  .FormDivision {
+    display: block;
+  }
+}
+.BucketHeading {
+  font-size: 3rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.218182px;
+  color: #fff;
+  margin-bottom: 4.4rem;
+  font-family: "Gilroy";
+  font-weight: 600;
+}
+
+.ReturnToBucket {
+  position: absolute;
+  top: 17%;
+  left: 7%;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-align: center;
+  letter-spacing: 0.09px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+}
+
+.ReturnToBucket:focus {
+  outline: none;
+}
+
+.ReturnToBucket::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 46%;
+  left: -53%;
+  height: 2px;
+  width: 5rem;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .ReturnToBucket {
+    left: 4rem;
+  }
+
+  .ReturnToBucket::before {
+    width: 2.5rem;
+    left: -31%;
+  }
+}
+
+.Form {
+  color: #fff;
+  width: 100%;
+}
+
+.FormPersonal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.FormPersonal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.FormPersonal h3,
+.FormAdress h3 {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: start;
+  letter-spacing: 0.15px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #939393;
+}
+
+.FormHouse {
+  display: flex;
+  justify-content: space-between;
+}
+
+.FormHouse .LabelInput {
+  width: calc(25% - 2.7rem);
+}
+
+.FormHouse .LabelInput:not(:last-child) {
+  margin-right: 2.7rem;
+}
+
+.LabelInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormWrapper {
+  width: calc(50% - 4rem);
+  padding-right: 4rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .FormWrapper {
+    width: calc(53% - 4rem);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .FormWrapper {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+
+
+.BucketOrderBtn {
+  margin-left: auto;
+  display: block;
+  width: 31rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: #fff;
+  transition: transform 0.1s;
+}
+
+.BucketOrderBtn:hover {
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.BucketOrderBtn:focus {
+  outline: none;
+}
+
+.BucketOrderBtn:active {
+  transform: translateY(2px);
+}
+
+/* ======INPUTS======== */
+
+.LargeInput,
+.SmallInput {
+  background-color: transparent;
+  border: 1px solid #979797;
+  padding: 0.75rem;
+  box-sizing: inherit;
+  color: #fff;
+  font-family: "Gilroy";
+}
+
+.LargeInput:focus,
+.SmallInput:focus {
+  outline: none;
+}
+
+.LargeLabel,
+.SmallLabel {
+  font-family: "Gilroy";
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.6rem;
+  text-align: start;
+  letter-spacing: 0.25px;
+  color: #a0a0a0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.InputAfter::after {
+  content: "*";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 1.5rem;
+  right: -0.5rem;
+  color: #ff0000;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .BucketWrapper {
+    width: 85%;
+  }
+  .ReturnToBucket {
+    top: 12rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .FormWrapper {
+    width: 100%;
+  }
+  .BucketPayment {
+    margin-top: 5rem;
+  }
+}

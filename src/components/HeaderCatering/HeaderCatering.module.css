@@ -1,0 +1,251 @@
+.Wrapper {
+  width: 100%;
+  position: relative;
+  /* padding: 30rem 0; */
+  padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .Wrapper {
+    padding-bottom: 2rem;
+  }
+}
+
+.Container {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.Puzzle,
+.Puzzle2 {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.Display1 {
+  display: block;
+}
+
+.Display2 {
+  display: none;
+}
+
+.HeaderCatering {
+  width: 109.8rem;
+  height: 74.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.FirstPuzzle {
+  position: absolute;
+  top: 21%;
+  left: 25%;
+  transform: translate(-34%, -23%);
+}
+
+.SecondPuzzle {
+  position: absolute;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.ThirdPuzzle {
+  position: absolute;
+  top: 31%;
+  right: -5%;
+  transform: translate(-55%, -50%);
+}
+
+.FourthPuzzle {
+  position: absolute;
+  bottom: 29%;
+  left: 1%;
+  transform: translate(50%, 28%);
+}
+
+.FifthPuzzle {
+  position: absolute;
+  bottom: 5%;
+  left: 47%;
+  transform: translate(-53%, -26%);
+}
+
+.Buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 12rem;
+  position: absolute;
+  top: 65.5%;
+  left: 68%;
+}
+
+.Buttons a,
+.Buttons button {
+  width: 18.5%;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(45deg, #a6a6a6 0%, #464646 15.51%, #b1b1b1 38.26%, #5f5f5f 62.19%, #acacac 72.92%, #3a3a3a 83.26%, #545454 94.98%, #ffffff 100%);
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.1s;
+  cursor: pointer;
+}
+
+.Buttons .Button {
+  display: block;
+  width: 18.5%;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(45deg, #a6a6a6 0%, #464646 15.51%, #b1b1b1 38.26%, #5f5f5f 62.19%, #acacac 72.92%, #3a3a3a 83.26%, #545454 94.98%, #ffffff 100%);
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.1s;
+}
+
+.Buttons a:hover,
+.Buttons button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.Buttons a:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 1600px) {
+  .Buttons {
+    top: 63.5%;
+    left: 67.75%;
+  }
+  .Buttons button,
+  .Buttons a {
+    padding: 1rem 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* .Buttons {
+    top: 60.5%;
+    left: 68.5%;
+    height: 10rem;
+  } */
+
+  .Buttons {
+    top: 65.5%;
+    left: 65.5%;
+  }
+  .Buttons .Button {
+    width: 23%;
+    padding: 1.1rem 0.5rem;
+  }
+  .Buttons button,
+  .Buttons a {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Buttons {
+    top: 65.5%;
+    left: 64.8%;
+  }
+  /* .Buttons {
+    left: 67.5%;
+  } */
+
+  .Buttons .Button {
+    padding: 1.1rem 0.25rem;
+
+    width: 24%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* .Buttons a,
+  .Buttons button {
+    width: 22.5rem;
+  } */
+
+  .Buttons .Button {
+    width: 100%;
+  }
+  .Puzzle {
+    margin-top: 2.5rem;
+  }
+  .Buttons {
+    position: relative;
+    margin: 0 auto;
+    left: unset;
+    width: 22.5rem;
+    margin-top: 3rem;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Buttons {
+    position: relative;
+    margin: 0 auto;
+    left: unset;
+    width: 22.5rem;
+    margin-top: 3rem;
+  }
+  .Buttons a,
+  .Buttons button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .Display1 {
+    display: none;
+  }
+  .Display2 {
+    display: block;
+  }
+  .Puzzle2 {
+    margin-top: 1rem;
+  }
+}
+
+.Animation1 {
+  animation: moveIn 1s ease-in both;
+}
+
+@keyframes moveIn {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 21%;
+  }
+}

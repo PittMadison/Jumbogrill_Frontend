@@ -1,0 +1,174 @@
+.Main {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.HeaderBGWrapper {
+  background-image: url(../../assets/img/bg/HEADER_BG.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.SliderText {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+}
+
+@media screen and (max-width: 1200px) {
+  .SliderText {
+    top: 30%;
+    left: 9%;
+  }
+}
+
+.SliderText h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7.3rem;
+  line-height: 8.8rem;
+  letter-spacing: 0.27px;
+  background-image: linear-gradient(#f99026 0%, #df2029 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.SliderText p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.113px;
+  color: #fff;
+}
+
+.PuzzleText {
+  text-align: center;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.9rem;
+  letter-spacing: 0.460637px;
+  color: #000000;
+}
+
+.PuzzleParagraph {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  text-align: center;
+  letter-spacing: 0.0984375px;
+  color: #000000;
+}
+
+@media screen and (max-width: 1100px) {
+  .PuzzleText {
+    font-size: 3rem;
+    line-height: 2.4rem;
+    margin-top: 1rem;
+  }
+  .PuzzleParagraph {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .SliderText h1 {
+    font-size: 5.5rem;
+    line-height: 6rem;
+  }
+  .SliderText p {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .SliderText {
+    top: 35%;
+    left: 8%;
+  }
+  .SliderText h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .SliderText p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .HeaderBGWrapper {
+    background-image: url(../../assets/img/bg/HEADER_BG600.jpg);
+    padding-top: 20rem;
+  }
+  .SliderText {
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 400;
+    width: 90%;
+    text-align: center;
+  }
+
+  .SliderText h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+  }
+  .SliderText p {
+    font-size: 2.6rem;
+  }
+  .PuzzleText {
+    font-size: 4rem;
+    line-height: 5rem;
+    padding: 0 2rem;
+
+    margin-top: -9rem;
+    position: relative;
+    z-index: 300;
+  }
+  .PuzzleParagraph {
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .SliderText h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  .SliderText p {
+    font-size: 1.8rem;
+  }
+  .SliderText {
+    top: 15%;
+    left: 50%;
+  }
+  .PuzzleText {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+  }
+  .PuzzleParagraph {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .SliderText {
+    top: 18.5%;
+    left: 50%;
+  }
+}

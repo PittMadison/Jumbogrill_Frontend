@@ -1,0 +1,87 @@
+.Grill {
+  width: 162.6px;
+  height: 161.5px;
+
+  background-size: cover;
+  background-position: center;
+
+  position: absolute;
+  top: 150%;
+  left: 49%;
+
+  transform: translateX(-49.8%);
+
+  z-index: 80;
+}
+
+.WalkInGrill {
+  animation: walkInGrill 1s ease-in-out forwards;
+}
+
+@keyframes walkInGrill {
+  from {
+    opacity: 0;
+    top: 150%;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+    top: 36.9%;
+  }
+}
+
+.Title {
+  font-family: "Gilroy";
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-align: center;
+  letter-spacing: 0.391541px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000;
+
+  width: 80%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.Total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 13px;
+  right: 13px;
+
+  z-index: 150;
+
+  font-family: "Gilroy";
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+}
+
+.Total span:nth-child(2) {
+  margin-top: 2px;
+}
+
+.Total span:nth-child(3) {
+  margin-top: -2px;
+}

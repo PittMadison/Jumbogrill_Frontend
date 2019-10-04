@@ -1,0 +1,58 @@
+.Window {
+    position: absolute;
+    padding: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 500;
+}
+
+.Message {
+  font-family: "Gilroy";
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+
+.Backing {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 800;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: zoom 0.75s;
+  }
+
+  .CloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #050505;
+  }
+  
+  .CloseBtn:focus {
+    outline: none;
+  }
+
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Window {
+      padding: 2rem;
+    }
+  }

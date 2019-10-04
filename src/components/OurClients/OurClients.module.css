@@ -1,0 +1,25 @@
+.Wrapper {
+    padding: 4rem 0 6rem 0;
+}
+
+.Title {
+    text-align: center;
+    color: #000;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.737019px;
+}
+
+.Text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
+    letter-spacing: 0.737019px;
+    margin-bottom: 3.3rem;
+}

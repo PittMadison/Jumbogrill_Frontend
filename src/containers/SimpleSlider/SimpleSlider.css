@@ -1,0 +1,13 @@
+.WrapperSlick {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: grey !important;
+}
+
+.slick-slide img {
+  margin: 0 auto;
+}

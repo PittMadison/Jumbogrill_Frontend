@@ -1,0 +1,26 @@
+.EasySliderWrapper {
+  width: 100%;
+  margin: 0 auto;
+  transform: translateY(2px);
+}
+
+.slick-next:before {
+  position: absolute;
+  top: 0;
+  left: -150%;
+}
+
+.slick-prev:before {
+  transform: translateX(-5%) !important;
+  position: absolute;
+  top: 0;
+  right: -150%;
+}
+
+.slick-prev {
+  z-index: 1000;
+}
+
+.slick-slide img {
+  margin: 0 auto;
+}

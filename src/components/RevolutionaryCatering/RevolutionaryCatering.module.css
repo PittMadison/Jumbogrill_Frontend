@@ -1,0 +1,192 @@
+.Wrapper {
+  background-image: url(../../assets/img/bg/SUBMAIN_BG.jpg);
+  background-size: cover;
+  padding: 10rem 0;
+}
+
+.Title {
+  padding-top: 11rem;
+  text-align: center;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.9rem;
+  letter-spacing: 0.460637px;
+  color: #fff;
+}
+
+.Title span {
+  color: #f84419;
+}
+
+.List {
+  margin: 0 auto;
+  margin-top: 4rem;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .Title {
+    padding-top: 6rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+.Item {
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 20rem;
+}
+
+.Item div {
+  margin: 0 auto;
+}
+
+.Item h5 {
+  margin-top: 3rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: center;
+  letter-spacing: 0.207287px;
+  color: #ffffff;
+}
+
+.Item p {
+  margin-top: 1.8rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: center;
+  max-width: 21rem;
+  letter-spacing: 0.207287px;
+  color: #ffffff;
+}
+
+.Percent {
+  background-image: url("../../assets/img/percent.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16rem;
+  height: 10rem;
+}
+
+.Glass {
+  background-image: url("../../assets/img/loupe.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16rem;
+  height: 10rem;
+}
+
+.Money {
+  background-image: url("../../assets/img/money.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16rem;
+  height: 10rem;
+}
+
+.Choices {
+  background-image: url("../../assets/img/choices.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 16rem;
+  height: 10rem;
+}
+
+@media screen and (max-width: 1300px) {
+  .Item {
+    padding-bottom: 5rem;
+    margin: 1.7rem;
+  }
+  .List {
+    padding-bottom: 7rem;
+    width: 60rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Choices,
+  .Money,
+  .Glass,
+  .Percent {
+    width: 20rem;
+    height: 11rem;
+  }
+
+  .List {
+    padding-bottom: 11rem;
+  }
+
+  .Title {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    padding-top: 10rem;
+  }
+
+  .Item {
+    margin: 3rem;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    background: url(../../assets/img/bg/bg_main_600.jpg);
+    background-size: cover;
+    background-position: top;
+  }
+  .Title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+  .Item h5 {
+    font-size: 2.2rem;
+    line-height: 2rem;
+  }
+
+  .Item p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  .List {
+    justify-content: center;
+    width: 40rem;
+  }
+  .Item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Title {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    padding: 0 2rem;
+  }
+  .Item h5 {
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+  }
+  .Item p {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+  .List {
+    padding-bottom: 0;
+  }
+}

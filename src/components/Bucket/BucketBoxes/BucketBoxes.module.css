@@ -1,0 +1,105 @@
+.Item {
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1.9rem rgba(0, 0, 0, 0.5);
+  box-sizing: content-box;
+  padding: 1rem;
+  position: relative;
+
+  margin: 2rem;
+}
+
+.BucketDeleteButton {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #050505;
+  
+  
+
+
+}
+
+.BucketDeleteButton:focus {
+  outline: none;
+}
+
+.BoxDeliveryItemButtons button {
+  color: #fff;
+  font-family: "Gilroy";
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.27px;
+  border: none;
+  background-color: #1e1e1e;
+  box-sizing: border-box;
+}
+
+.BoxDeliveryItemButtons button:focus {
+  outline: none;
+}
+
+.BoxDeliveryItemButtons button:nth-child(odd) {
+  padding: 0.5rem 1.35rem;
+}
+
+.BoxDeliveryItemButtons button:nth-child(even) {
+  padding: 0.5rem 0;
+}
+
+.BoxDeliveryItemButtons .BoxDeliveryItemCount {
+  border-left: 1px solid #303030;
+  border-right: 1px solid #303030;
+  padding: 0 0.75rem;
+  width: 50px;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.BoxDeliveryItemImg {
+  width: 240px;
+  height: 180px;
+}
+
+.Name {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+  text-align: center;
+  letter-spacing: 0.293333px;
+
+  color: #ffffff;
+}
+
+.PricingAmount,
+.AmountText {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+.BottomItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.PricingSum {
+  width: 11rem;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.7rem;
+
+  color: #ffffff;
+}

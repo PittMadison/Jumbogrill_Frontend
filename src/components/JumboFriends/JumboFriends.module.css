@@ -1,0 +1,111 @@
+.Wrapper {
+  background-image: url(../../assets/img/bg/HachatryanBG.jpg);
+  background-size: cover;
+  background-position-x: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 15rem 10rem 0;
+}
+
+@media screen and (max-width: 1400px) {
+  .Wrapper {
+    padding-right: 5rem;
+    background-position-x: 40%;
+  }
+}
+
+.Items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  margin-left: auto;
+  width: 61rem;
+}
+
+.Items h5 {
+  margin-top: 4.5rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 4.9rem;
+}
+
+.Items p {
+  margin-top: 3.5rem;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .Items {
+    width: 50rem;
+  }
+  .Items h5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 2.5rem;
+  }
+  .Items p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .Items {
+    width: 40rem;
+  }
+  .Items h5 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    margin-top: 2.5rem;
+  }
+  .Items p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-bottom: 5rem;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .Wrapper {
+    background: url(../../assets/img/bg/Hachatyan_bg_900.jpg);
+    background-position: top;
+    background-size: cover;
+
+    padding: 40rem 0;
+  }
+
+  .Items {
+    margin-left: 0;
+    transform: translateY(32rem);
+
+    width: 50rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Wrapper {
+    background: url(../../assets/img/bg/Hachatyan_bg_450.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    height: max-content;
+  }
+  .Items {
+    transform: translateY(0);
+    width: 32rem;
+    margin-top: 47rem;
+  }
+  .Items p {
+    margin-top: 2rem;
+  }
+}

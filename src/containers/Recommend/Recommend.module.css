@@ -1,0 +1,47 @@
+.Reccomend {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2000;
+
+    box-shadow: 0 5px 20px -10px rgba(0,0,0,0.75);
+
+    background-color: #f5f5f5;
+    padding: 1rem 2rem 2rem;
+
+}
+
+.Title {
+    text-align: center;
+    font-family: "Gilroy";
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.Close {
+    position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(40%, -40%);
+      padding: 0.5rem;
+      border-radius: 50%;
+      background-color: #050505;
+  }
+
+  .Close img {
+    width: 1rem;
+  }
+  
+  .Close:focus {
+    outline: none;
+  }
+
+
+.List {
+    
+}

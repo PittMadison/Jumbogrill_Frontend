@@ -1,0 +1,311 @@
+.Restaurant {
+  padding-top: 15rem;
+}
+
+.Title {
+  text-align: center;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.7rem;
+
+  letter-spacing: 0.225px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+img {
+  display: block;
+}
+
+.PorkMenu,
+.FishMenu,
+.KebabMenu {
+  width: 40%;
+}
+
+.Fish {
+  transform: translateX(5%);
+}
+
+.PorkImg,
+.FishImg,
+.KebabImg {
+  width: 55%;
+  max-width: 65%;
+  height: auto;
+}
+
+.ChickenImg,
+.PrawnsImg {
+  width: 85%;
+}
+
+.Sets {
+  margin-bottom: 4.3rem;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.218182px;
+
+  color: #ffffff;
+}
+
+.FishText,
+.PorkText,
+.KebabText,
+.ChickenText,
+.PrawnsText {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  letter-spacing: 0.225px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.Pork,
+.Fish,
+.Kebab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.Chicken,
+.Prawns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.PorkText,
+.FishText,
+.KebabText,
+.ChickenText,
+.PrawnsText {
+  width: 87%;
+  position: relative;
+}
+
+.PorkText::before,
+.FishText::before,
+.KebabText::before,
+.ChickenText::before,
+.PrawnsText::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -8%;
+  transform: translateY(-50%);
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #eb5527;
+  border-radius: 10rem;
+}
+
+.Bordered {
+  border-bottom: 1px dashed #757575;
+}
+
+.PorkItems,
+.FishItems,
+.KebabItems {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChickenItems,
+.PrawnsItems {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(2.5%);
+}
+
+.PorkPrice,
+.FishPrice,
+.KebabPrice,
+.ChickenPrice,
+.PrawnsPrice {
+  display: flex;
+  width: 13%;
+  color: #fff;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+
+  letter-spacing: 0.225px;
+  text-transform: uppercase;
+  height: 6rem;
+}
+
+.PorkPrice span,
+.FishPrice span,
+.KebabPrice span,
+.ChickenPrice span,
+.PrawnsPrice span {
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+}
+
+.Specials {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  letter-spacing: 0.225px;
+  text-transform: uppercase;
+
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+}
+
+.BottomMenus {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 87%;
+}
+
+@media screen and (max-width: 1200px) {
+  .Restaurant {
+    padding-top: 12rem;
+  }
+  .Title {
+    font-size: 2.5rem;
+  }
+
+  .FishText,
+  .PorkText,
+  .KebabText,
+  .ChickenText,
+  .PrawnsText {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Sets {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .PorkPrice,
+  .FishPrice,
+  .KebabPrice,
+  .ChickenPrice,
+  .PrawnsPrice {
+    height: 3.3rem;
+    font-size: 1.5rem;
+  }
+
+  .PorkPrice span,
+  .FishPrice span,
+  .KebabPrice span,
+  .ChickenPrice span,
+  .PrawnsPrice span {
+    font-size: 1rem;
+  }
+
+  .Specials {
+    font-size: 1rem;
+  }
+
+  .BottomMenus {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .PorkText::before,
+  .FishText::before,
+  .KebabText::before,
+  .ChickenText::before,
+  .PrawnsText::before {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .Pork,
+  .Fish,
+  .Kebab,
+  .BottomMenus {
+    flex-direction: column;
+  }
+  .Fish {
+    transform: translateX(0);
+  }
+  .PorkImg,
+  .FishImg,
+  .KebabImg,
+  .ChickenImg,
+  .PrawnsImg {
+    width: 400px;
+    max-width: unset;
+  }
+  .FishMenu {
+    order: 2;
+  }
+  .PorkMenu,
+  .FishMenu,
+  .KebabMenu,
+  .ChickenItems,
+  .PrawnsItems {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .PorkImg,
+  .FishImg,
+  .KebabImg,
+  .ChickenImg,
+  .PrawnsImg {
+    width: 300px;
+  }
+  .PorkMenu,
+  .FishMenu,
+  .KebabMenu,
+  .ChickenItems,
+  .PrawnsItems {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .PorkImg,
+  .FishImg,
+  .KebabImg,
+  .ChickenImg,
+  .PrawnsImg {
+    width: 280px;
+  }
+  .PorkMenu,
+  .FishMenu,
+  .KebabMenu,
+  .ChickenItems,
+  .PrawnsItems {
+    width: 280px;
+  }
+}

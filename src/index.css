@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../src/assets/fonts/Gilroy-ExtraBold.woff") format("woff");
+  font-weight: 800;
+ }
+@font-face {
+  font-family: "Gilroy";
+  src: url("../src/assets/fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../src/assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../src/assets/fonts/Gilroy-SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+body {
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.MainWrapper {
+  background-image: url(../src/assets/img/bg/BG_MAIN.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}

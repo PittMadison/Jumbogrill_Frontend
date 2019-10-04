@@ -1,0 +1,426 @@
+.Wrapper {
+  width: 1085px;
+  height: 749px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+
+  z-index: 100;
+}
+
+.Logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 17px;
+  height: 17px;
+}
+
+.TopContext {
+  position: relative;
+  margin: 2.5rem 0 1.5rem 2.5rem;
+}
+
+.Title {
+  font-family: "Gilroy";
+
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.460637px;
+
+  color: #000000;
+}
+
+.TitleCategory {
+  text-transform: uppercase;
+}
+
+.Counter {
+  position: absolute;
+    top: -15%;
+    right: 10%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ButtonsTop {
+  background-color: #f5f5f5;
+  width: 110px;
+}
+.Buttons {
+  background-color: #f5f5f5;
+  width: 180px;
+}
+.Buttons button,
+.ButtonsTop button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+
+  text-align: center;
+  letter-spacing: 0.259108px;
+
+  color: #000000;
+}
+
+.Buttons button:focus,
+.ButtonsTop button:focus {
+  outline: none;
+}
+
+.LastButton,
+.FirstButton {
+  padding: 0.8rem 1.25rem;
+}
+
+.PeopleNumber {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  text-align: right;
+  letter-spacing: 0.207692px;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  color: #000000;
+}
+
+.PeopleCounter {
+  border-left: 1px solid #303030;
+  border-right: 1px solid #303030;
+  padding: 0.1rem 0.5rem;
+  width: 40px;
+}
+
+.PeopleCounterSet {
+  border-left: 1px solid #303030;
+  border-right: 1px solid #303030;
+  padding: 0.1rem;
+
+  width: 75px;
+}
+
+.ChangeBtn {
+  width: 15rem;
+  height: 3rem;
+  background: linear-gradient(168.69deg, #04cf00 0%, #00940f 100%);
+
+  border-image-source: linear-gradient(168.69deg, #04cf00 0%, #00940f 100%);
+  border-image-slice: 1;
+
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  text-align: center;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
+
+  position: absolute;
+  top: 6rem;
+  left: 2.5rem;
+}
+
+.ChangeBtn:focus {
+  outline: none;
+}
+
+.ChangeBtn:active {
+  transform: translateY(2px);
+}
+
+.ChangeBtn img {
+  margin-right: 1rem;
+}
+
+.TableScroll {
+  width: 100%;
+  margin-top: 5rem;
+  height: 510px;
+  overflow-y: auto;
+}
+
+.Table {
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  text-align: center;
+  letter-spacing: 0.207692px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.Positions {
+  width: 400px;
+}
+
+.Portion {
+  width: 100px;
+}
+.Pricing {
+  width: 100px;
+}
+.Weight {
+  width: 100px;
+}
+
+.Total {
+  width: 140px;
+}
+
+.ProductName {
+  padding-left: .5rem;
+
+  background-color: #f5f5f5;
+  margin-left: 2.5rem;
+
+  height: 58px;
+
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+}
+
+.BotContext {
+  width: 95%;
+
+  display: flex;
+  justify-content: flex-end;
+  margin: 2rem 2.5rem 0;
+
+  position: relative;
+
+  backface-visibility: hidden;
+}
+
+.Results {
+  width: 60rem;
+  font-family: "Gilroy";
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  text-align: right;
+  letter-spacing: 0.276382px;
+
+  color: #000000;
+}
+
+.TotalPrice,
+.OneGuestPrice,
+.TotalWeight,
+.OneGuestWeight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.FieldName {
+  width: 60%;
+  margin-right: 2rem;
+}
+
+.FieldInfo {
+  width: 30%;
+
+  display: inline-block;
+
+  font-weight: bold;
+  text-align: left;
+}
+
+.AddBtn {
+  position: absolute;
+    top: 0;
+    left: 0;
+
+  cursor: pointer;
+
+  width: 15rem;
+  height: 3rem;
+  background: linear-gradient(168.69deg, #04cf00 0%, #00940f 100%);
+
+  border-image-source: linear-gradient(168.69deg, #04cf00 0%, #00940f 100%);
+  border-image-slice: 1;
+
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  text-align: center;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  backface-visibility: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.1s;
+}
+
+.AddBtn:focus {
+  outline: none;
+}
+
+.AddBtn:active {
+  transform: translateY(2px);
+}
+
+.AddBtn img {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+  .Wrapper {
+    transform: scale(0.9);
+    transform-origin: -450% -450%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Wrapper {
+    transform: scale(0.85);
+    transform-origin: -284% -284%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrapper {
+    transform: scale(0.8);
+    transform-origin: -200% -200%;
+  }
+  .Portion {
+    width: 75px;
+  }
+  .Pricing {
+    width: 80px;
+  }
+  .Total {
+    width: 120px;
+  }
+  .Weight {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Wrapper {
+    width: 122%;
+    height: 700px;
+  }
+  .ButtonsTop {
+    width: 96px;
+  }
+  .Portion {
+    width: 50px;
+  }
+  .Pricing {
+    width: 50px;
+  }
+  .Results {
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Wrapper {
+    height: 625px;
+  }
+  .TableScroll {
+    height: 440px;
+  }
+  .Logo {
+    transform: scale(0.75);
+    left: -.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .TopContext {
+    align-items: center;
+  }
+  .Counter {
+    top: -1rem;
+  }
+  .Title {
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+  }
+  .TableScroll {
+    height: 440px;
+    overflow-x: scroll;
+  }
+  .Table {
+    width: 750px;
+  }
+  .BotContext {
+    width: 95%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    min-width: 310px;
+  }
+  .TableScroll {
+    margin-top: 6.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Logo {
+    transform: scale(0.45);
+    left: -2rem;
+    bottom: -0.65rem;
+  }
+  .Results {
+    font-size: 1.6rem;
+  }
+  .BotContext {
+    width: 93%;
+  }
+  .AddBtn {
+    top:  -61.75rem;
+    left: 17rem;
+  }
+}
+

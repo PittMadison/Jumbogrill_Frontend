@@ -1,0 +1,192 @@
+.Title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2rem;
+
+  letter-spacing: 0.460637px;
+
+  color: #000;
+
+  text-align: center;
+}
+
+/* =======================================================================form================================================== */
+
+.Form {
+  background-color: #fff;
+
+  margin: 0 auto;
+
+  width: 50rem;
+
+  box-shadow: 0px 0px 3rem rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  padding: 3rem 1rem;
+}
+
+.Logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.Input {
+  width: 36rem;
+  display: block;
+  height: 30px;
+  margin: 2.5rem auto 0;
+
+  border: none;
+  border-bottom: 1px solid #9f9f9f;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+.RadioButtons {
+  display: flex;
+  justify-content: space-between;
+
+  width: 36rem;
+  margin: 3rem auto 0;
+}
+
+.Radio {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.Radio input {
+  display: none;
+}
+.Radio .Checkmark {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+
+  border: 1px solid #9f9f9f;
+}
+
+.Radio input:checked + .Checkmark::after {
+  content: "";
+  display: block;
+  background: url(../../../assets/img/fireCheck.svg) center no-repeat;
+  background-size: cover;
+  width: 22px;
+  height: 26px;
+  position: absolute;
+  top: -8px;
+  left: -1px;
+}
+/*=============================================BTN=====================================*/
+
+.Button {
+  cursor: pointer;
+
+  margin: 2.8rem auto 0;
+  display: block;
+  width: 27rem;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: 800;
+  color: #000;
+  transition: transform 0.1s;
+}
+
+.Button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 900px){
+  .Radio {
+    font-size: 10px;
+    padding-left: 28px;
+  }
+ 
+}
+
+@media screen and (max-width: 600px) {
+  .Form {
+    width: 310px;
+  }
+  .Title {
+    font-size: 1.6rem;
+  }
+  .Input {
+    width: 28rem;
+  }
+  .Button {
+    width: 20rem;
+  }
+  .RadioButtons {
+    width: 28rem;
+  }
+  .Radio {
+    display: inline-flex;
+    align-items: center;
+    line-height: 10px;
+    text-align: center;
+    height: 20px;
+  }
+  .Checkmark:not(:first-child) {
+    margin-left: 5px;
+  }
+  .Logo {
+    transform: scale(.7);
+    top: 0;
+    left: -4px;
+  }
+}

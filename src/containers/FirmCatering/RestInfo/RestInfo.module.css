@@ -1,0 +1,625 @@
+.Form {
+  max-width: 1250px;
+  width: 65%;
+  height: 700px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: transparent;
+  display: flex;
+}
+
+.Logo {
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+}
+
+.Main,
+.Details {
+  width: 50%;
+  backface-visibility: hidden;
+}
+
+.Title {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+
+  letter-spacing: 0.460637px;
+
+  color: rgba(248, 68, 25, 0.614);
+}
+
+.Title2 {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 1.6rem;
+  line-height: 4.4rem;
+  letter-spacing: 0.460637px;
+  color: rgba(248, 68, 25, 0.614);
+
+  margin-bottom: 3rem;
+}
+
+.SubTitle {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  letter-spacing: 0.460637px;
+
+  color: #ffffff;
+}
+
+.Service {
+  margin-top: 6.5rem;
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.6rem;
+
+  letter-spacing: -0.0048px;
+
+  color: #ffffff;
+}
+
+.ListTitle {
+  margin-top: 2rem;
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+
+  display: flex;
+  align-items: center;
+
+  color: #f84419;
+}
+
+.List {
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.List li {
+  margin-top: 1.7rem;
+}
+
+.TextRed {
+  color: #f84419;
+}
+
+.Extra {
+  margin-top: 3.3rem;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
+
+  display: flex;
+  align-items: center;
+
+  color: #f99026;
+}
+
+.Price {
+  color: #df2029;
+}
+
+.Info {
+  margin-top: 0.25rem;
+
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 120%;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #f84419;
+}
+
+.Details {
+  padding-left: 5rem;
+}
+
+.Description {
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: #ffffff;
+
+  margin-top: 2.5rem;
+}
+
+.ItemName {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.0016px;
+
+  color: #ffffff;
+}
+
+.ItemService {
+  color: #f84419;
+}
+
+.BuffetItem {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 6rem;
+}
+
+.ItemName {
+  display: flex;
+  flex-direction: column;
+}
+
+.Button span {
+  margin-right: 1rem;
+}
+
+.TopDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.List2 {
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.0016px;
+  list-style: circle;
+  color: #fff;
+  transform: translateX(20px);
+}
+
+/*========================================BTN========================================*/
+
+.Button {
+  cursor: pointer;
+
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.1s;
+}
+
+.Button:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.Button:focus {
+  outline: none;
+}
+
+.Button:active {
+  transform: translateY(2px);
+}
+
+.Btn {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 50%;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.1s;
+}
+
+.Btn:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.Btn:focus {
+  outline: none;
+}
+
+.Btn:active {
+  transform: translateY(2px);
+}
+
+
+.BuyBtn {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30%;
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  font-family: "Gilroy";
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.1s;
+}
+
+.BuyBtn:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+.BuyBtn:focus {
+  outline: none;
+}
+
+.BuyBtn:active {
+  transform: translateY(2px);
+}
+
+.SkipBtn {
+  cursor: pointer;
+
+  position: absolute;
+  bottom: -7.5%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  text-decoration: underline;
+
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.83px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  color: #a7a7a7;
+}
+
+.Green {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+  border-image-source: linear-gradient(169.63deg, #00db00 0%, #084400 100%);
+}
+
+.Title900 {
+  display: none;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .Form {
+    width: 60%;
+  }
+  .SubTitle {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .Service {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  .ListTitle {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .List {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+  .Details img {
+    margin-top: 1rem;
+    width: 90%;
+  }
+  .Button, .BackButton {
+    width: 80%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+  .Description {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .ItemName {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+  .BuyBtn {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    width: 28%;
+  }
+
+  .Btn {
+    font-size: 1rem;
+    width: 40%;
+  }
+
+  .List2 {
+    font-size: 1.4rem;
+  }
+
+  .Title2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .Title2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Title2 {
+    font-size: 1rem;
+  }
+  .Form {
+    height: 600px;
+  }
+  .SubTitle {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .Service {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .ItemName {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+  .BuyBtn {
+    font-size: .9rem;
+    line-height: 1.1rem;
+    padding: .9rem .8rem;
+  }
+  .Button, .BackButton {
+    width: 85%;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    padding: .9rem .8rem;
+  }
+  .Details {
+    padding-left: 2rem;
+  }
+  .Title {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .List {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+  .List2 {
+    font-size: 1.2rem;
+  }
+  .Btn {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Title2 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+  .Logo {
+    transform: scale(.7);
+    top: -3rem;
+    right: -3rem;
+  }
+  .Form {
+    height: 480px;
+  }
+  .Title900 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .Main {
+    display: none;
+  }
+  .Details {
+    width: 100%;
+    padding-left: 0;
+  }
+  .Details img {
+    width: 100%;
+  }
+  .SkipBtn {
+    bottom: 2.5%;
+  }
+  .Title2 {
+    margin-bottom: 2rem;
+  }
+  .TopDetails {
+    justify-content: center;
+  }
+  .List2 {
+    font-size: 2rem;
+    margin-right: 5rem;
+  }
+  .Btn {
+    font-size: 1.7rem;
+    width: 35%;
+  }
+  .BuffetItem {
+    margin-top: 4rem;
+    justify-content: center;
+  }
+  .ItemName {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin-right: 5rem;
+  }
+  .BuyBtn {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Form {
+    margin-top: 3rem;
+  }
+  .SkipBtn {
+    bottom: 5%;
+  }
+  .Title2 {
+    font-size: 1.7rem;
+  }
+  .List2 {
+    font-size: 1.7rem;
+    margin-right: 5rem;
+  }
+  .Btn {
+    font-size: 1.3rem;
+    width: 32%;
+  }
+  .BuffetItem {
+    margin-top: 4rem;
+    justify-content: center;
+  }
+  .ItemName {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-right: 5rem;
+  }
+  .BuyBtn {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 23%;
+  }
+ }
+
+ @media screen and (max-width: 600px) {
+   .Title2 {
+     font-size: 1.2rem;
+   }
+   .List2 {
+    font-size: 1.3rem;
+    margin-right: 5rem;
+   }
+   .ItemName {
+    font-size: 1.3rem;
+    margin-right: 4rem;
+   }
+  .Btn, .BuyBtn {
+   font-size: 1.1rem;
+  }
+  .Btn {
+    min-width: 100px;
+  }
+  .BuyBtn {
+    min-width: 75px;
+  }
+}
+
+ @media screen and (max-width: 500px) {
+   .Form {
+    width: 75%;
+   }
+ }

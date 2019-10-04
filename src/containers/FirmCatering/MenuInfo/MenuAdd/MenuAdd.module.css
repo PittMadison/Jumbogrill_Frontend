@@ -1,0 +1,368 @@
+.Wrapper {
+  width: 1085px;
+  height: 749px;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: #fff;
+
+  z-index: 110;
+
+  display: flex;
+}
+
+.SetArea {
+  width: 25%;
+  background: #f8f8f8;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.108);
+}
+
+.SetTitle {
+  margin-top: 2rem;
+  font-family: "Gilroy";
+
+  font-weight: 800;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.460637px;
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.SetNaming {
+  font-family: "Gilroy";
+
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  text-align: left;
+  letter-spacing: 0.207692px;
+  text-transform: uppercase;
+
+  color: #000000;
+
+  width: 80%;
+  margin: 3rem auto 0;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  border-bottom: 1px solid #000;
+}
+
+.ListWrapper {
+  overflow-y: auto;
+  height: 640px;
+}
+
+.Item {
+  display: flex;
+  align-items: center;
+
+  margin: 0 0.5rem;
+}
+
+.Delete {
+  width: 10%;
+}
+
+.List .Item:last-child .Name {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.Name {
+  width: 80%;
+  padding: 1.5rem;
+  border-bottom: 1px solid #dcdcdc;
+
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  color: #000000;
+}
+
+.New {
+  width: 10%;
+}
+
+.Categories {
+  padding-top: 2rem;
+
+  text-align: center;
+
+  font-family: "Gilroy";
+
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.Close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  width: 17px;
+  height: 17px;
+}
+
+.MenuArea {
+  width: 75%;
+}
+
+.Menu {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.MenuWrapper {
+  margin-top: 2rem;
+
+  width: 100%;
+  height: calc(100% - 48px - 2rem);
+
+  padding: 0rem 1rem;
+  overflow-y: auto;
+}
+
+.MenuItem {
+  display: flex;
+  margin: 1.9rem;
+
+  width: 220px;
+  height: 150px;
+}
+
+.Link {
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+
+  font-family: "Gilroy";
+
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.322446px;
+
+  color: #ffffff;
+
+  text-shadow: 0px 0px 1.9rem rgba(0, 0, 0, 0.981643),
+    0px 0px 1.9rem rgba(0, 0, 0, 0.981643);
+
+  text-decoration: none;
+
+  position: relative;
+}
+
+.LinkText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+.Arrow {
+  margin-right: 1rem;
+}
+
+.AlignSelfCenter {
+  align-self: center;
+}
+
+.BackBtn {
+  cursor: pointer;
+
+  background-color: transparent;
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    45deg,
+    #a6a6a6 0%,
+    #464646 15.51%,
+    #b1b1b1 38.26%,
+    #5f5f5f 62.19%,
+    #acacac 72.92%,
+    #3a3a3a 83.26%,
+    #545454 94.98%,
+    #ffffff 100%
+  );
+  border-image-slice: 1;
+  padding: 1.1rem 2rem;
+  font-family: "Gilroy";
+  font-weight: bold;
+  font-size: 1.8rem;
+  letter-spacing: 0.83px;
+  line-height: 2.2rem;
+  transition: transform 0.2s;
+
+  width: 100%;
+  height: 45px;
+
+  color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.BackBtn:focus {
+  outline: none;
+}
+
+.BackBtn:active {
+  transform: translateY(2px);
+}
+
+.BackBtn:hover {
+  color: #fff;
+  background-image: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+  border-image-source: linear-gradient(169.63deg, #f99026 0%, #df2029 100%);
+}
+
+@media screen and (max-width: 1400px) {
+  .Wrapper {
+    transform: scale(0.9);
+    transform-origin: -450% -450%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Wrapper {
+    transform: scale(0.85);
+    transform-origin: -284% -284%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Wrapper {
+    transform: scale(0.8);
+    transform-origin: -200% -200%;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .Wrapper {
+    width: 122%;
+    height: 700px;
+}
+.MenuItem {
+  width: 180px;
+    height: 110px;
+}
+  .Menu {
+    justify-content: center;
+  }
+  .LinkText {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  }
+  .Arrow {
+    transform: scale(0.7);
+  }
+  .BackBtn {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    padding: .8rem 1.2rem;
+    height: 40px;
+  }
+  .ListWrapper {
+    height: 614px;
+  }
+  .MenuWrapper {
+    height: calc(100% - 39px - 2rem);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Wrapper {
+    height: 625px;
+}
+.SetArea {
+  width: 30%;
+}
+.MenuArea {
+  width: 70%;
+}
+  .MenuItem {
+    width: 150px;
+      height: 90px;
+      margin: .8rem;
+  }
+  .Name {
+    font-size: 1.2rem;
+  }
+  .ListWrapper {
+    height: 539px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Wrapper {
+    min-width: 310px;
+  }
+  .SetArea {
+    width: 40%;
+  }
+  .MenuArea {
+    width: 60%;
+  }
+  .Name {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .SetArea {
+    width: 60%;
+  }
+  .MenuArea {
+    width: 40%;
+  }
+  .SetTitle {
+    font-size: 1.8rem;
+  }
+  .Categories {
+    font-size: 1.8rem;
+  }
+  .Delete, .New {
+    width: 7%;
+  }
+  .Name {
+    width: 86%;
+    padding: 1rem .5rem;
+  }
+  .SetNaming {
+    padding-left: .5rem;
+    font-size: 1.1rem;
+  }
+  
+  .LinkText {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+  }
+}
+
